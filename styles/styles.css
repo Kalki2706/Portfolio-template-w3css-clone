@@ -179,6 +179,14 @@ td {
 
 /* SIXTH  */
 
+.contact-container {
+  padding: 64px 24px;
+}
+
+.contact-head {
+  margin: 10px 0;
+}
+
 .left-align {
   text-align: left;
 }
