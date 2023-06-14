@@ -27,40 +27,7 @@ section {
   padding: 0.15px 16px;
 }
 
-.grid-two {
-  background-color: #607d8b;
-}
-
-.grid-three {
-  background-color: #f1f1f1;
-  color: #000;
-  padding: 0;
-}
-
-.grid-four {
-  background-color: #3f51b5;
-}
-
-.grid-five {
-  background-color: #616161;
-}
-
-.grid-six {
-  background-color: #009688;
-}
-
-/* GRID IMAGE LAYOUT  */
-
-.img-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 325px);
-}
-
-img {
-  width: 325px;
-}
-
-/* GRID-ONE */
+/* FIRST GRID CONTAINER */
 
 .grid-one {
   background-color: black;
@@ -109,6 +76,12 @@ a {
   background-color: #695548;
 }
 
+/* SECOND GRID CONTAINER */
+
+.grid-two {
+  background-color: #607d8b;
+}
+
 .img {
   display: flex;
   justify-content: center;
@@ -137,6 +110,25 @@ p {
   text-align: left;
 }
 
+/* THIRD GRID CONTAINER */
+
+.grid-three {
+  background-color: #f1f1f1;
+  color: #000;
+  padding: 0;
+}
+
+/* --GRID IMAGE LAYOUT-- */
+
+.img-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 325px);
+}
+
+img {
+  width: 325px;
+}
+
 .project-txt {
   text-align: center;
 }
@@ -146,8 +138,12 @@ hr {
   height: 25px;
 }
 
-/* FOURTH GRID COLUMN */
+/* FOURTH GRID CONTAINER*/
 /* --RESUME-- */
+
+.grid-four {
+  background-color: #3f51b5;
+}
 
 table {
   border-collapse: collapse;
@@ -178,7 +174,17 @@ td {
   vertical-align: top;
 }
 
-/* SIXTH  */
+/* GRID FIFTH CONTAINER */
+
+.grid-five {
+  background-color: #616161;
+}
+
+/* GRID SIXTH CONTAINER */
+
+.grid-six {
+  background-color: #009688;
+}
 
 .contact-container {
   padding: 64px 24px;
