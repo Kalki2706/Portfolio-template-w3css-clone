@@ -198,6 +198,10 @@ td {
   text-align: left;
 }
 
+.opacity {
+  opacity: 0.6;
+}
+
 label,
 input {
   display: block;
