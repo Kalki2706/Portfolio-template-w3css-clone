@@ -199,6 +199,7 @@ td {
 }
 
 .opacity {
+  text-transform: uppercase;
   opacity: 0.6;
 }
 
