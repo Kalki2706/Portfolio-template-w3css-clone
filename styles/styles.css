@@ -236,7 +236,7 @@ button {
 
 button:hover {
   color: #000;
-  background-color: inherit;
+  background-color: #e9e9ed;
 }
 
 /* FOOTER SECTION */
