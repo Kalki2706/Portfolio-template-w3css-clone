@@ -15,7 +15,7 @@ body {
 
 .grid-layout {
   display: grid;
-  grid-template-rows: 700px 800px 700px;
+  grid-template-rows: 740px 800px 700px;
 }
 
 section {
@@ -119,14 +119,24 @@ p {
 }
 
 /* --GRID IMAGE LAYOUT-- */
-
+/* 
 .img-grid {
   display: grid;
   grid-template-columns: repeat(2, 325px);
-}
+} */
 
 img {
-  width: 325px;
+  /* width: 325px; */
+  width: 100%;
+}
+
+.media-img {
+  display: flex;
+}
+
+.hidden {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .project-txt {
@@ -254,7 +264,7 @@ button:hover {
 
 footer {
   background-color: #000;
-  padding: 16px;
+  padding: 16px 0px;
 }
 
 .copyright {
@@ -268,30 +278,93 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 500px) {
-  h1,
-  h2 {
-    color: #f00;
-  }
+.container {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  /* padding-right: 0.5rem;
+  padding-left: 0.5rem; */
+  /* border: 10px solid red; */
+}
+/* XS */
 
-  .heading {
-    padding: 30px;
-  }
-
-  .buttons {
-    padding: 10px;
+@media (max-width: 475px) {
+  .container {
+    max-width: 475px;
+    margin: 0 auto;
   }
 
   section {
     display: grid;
-    grid-template-columns: 75%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 700px) repeat(2, 800px) repeat(2, 700px);
   }
 
   .grid {
-    /* height: 400px; */
+    /* height: 700px; */
+    /* z-index: 1; */
   }
 
   .grid-two {
-    /* height: 700px; */
+    /* z-index: 10; */
+    grid-row: 2 / 4;
+  }
+
+  .grid-three,
+  .grid-four {
+    height: 800px;
+    z-index: 1;
+  }
+
+  .usr-img {
+    width: 50%;
+    border-radius: 50%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .media-img {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  body {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
   }
 }
