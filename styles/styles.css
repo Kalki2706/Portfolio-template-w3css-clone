@@ -265,3 +265,33 @@ footer {
   text-decoration: underline;
   padding: 0;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 500px) {
+  h1,
+  h2 {
+    color: #f00;
+  }
+
+  .heading {
+    padding: 30px;
+  }
+
+  .buttons {
+    padding: 10px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 75%;
+  }
+
+  .grid {
+    /* height: 400px; */
+  }
+
+  .grid-two {
+    /* height: 700px; */
+  }
+}
